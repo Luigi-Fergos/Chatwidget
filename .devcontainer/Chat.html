@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Widget Test</title>
+</head>
+<body>
+    <!-- Widget Configuration -->
+    <script>
+        window.chatWidgetConfig = {
+            webhooks: {
+                url: 'your n8n webhook URL',
+                route: 'general'
+            },
+            branding: {
+                logo: 'your company logo URL',
+                name: 'onodecreative.io', // Your company name
+                welcomeText: 'Hi 👋, how can we help?', //welcome message
+                responseTime: 'We typically respond right away' //Response time message
+            },
+            style: {
+                primaryColor: '#854fff', //Primary color
+                secondaryColor: '#03fd6d', //Secondary color
+                position: 'right', //Position of the widget (left or right)
+                backgroundColor: '#ffffff', //Background color of the chat
+                fontColor: '#333333' //Text color for messages and interface
+            }
+        };
+    </script>
+    <!-- The correct n8n chatbot widget script -->
+    <script src="https://cdn.jsdelivr.net/gh/n8n-io/n8n-chatbot-widget/widget.js"></script>
+    
+    <h1>Chat Widget Test Page</h1>
+    <p>You should see a chat bubble in the bottom corner.</p>
+</body>
+</html>
